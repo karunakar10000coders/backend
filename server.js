@@ -53,7 +53,7 @@ app.get("/search", (req, res) => {
   }
 });
 
-app.get("/:id", auth, (req, res) => {
+app.get("/:id", (req, res) => {
   const id = parseInt(req.params.id);
   const array = JSON.parse(fs.readFileSync(dataFile, "utf-8"));
   const matchedIndex = array.find((x) => x.id == id);
