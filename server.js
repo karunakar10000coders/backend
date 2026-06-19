@@ -33,7 +33,7 @@ function auth(req, res, next) {
   next();
 }
 
-app.get("/", auth, (req, res) => {
+app.get("/", (req, res) => {
   fs.readFile(dataFile, "utf-8", (err, data) => {
     if (err) throw err;
     res.send(data);
