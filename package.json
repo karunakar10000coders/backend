@@ -8,6 +8,6 @@
     "nodemon": "^3.1.14"
   },
   "scripts": {
-    "dev": "nodemon express.js"
+    "dev": "nodemon server.js"
   }
 }
